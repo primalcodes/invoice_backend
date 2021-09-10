@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 2021_09_10_114738) do
     t.integer "payment_terms"
     t.string "client_name"
     t.string "email"
-    t.integer "status"
-    t.integer "total"
+    t.integer "status", default: 0, null: false
+    t.integer "total", default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

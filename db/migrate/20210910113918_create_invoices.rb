@@ -6,8 +6,8 @@ class CreateInvoices < ActiveRecord::Migration[6.1]
       t.integer :payment_terms
       t.string :client_name
       t.string :email
-      t.integer :status
-      t.integer :total
+      t.integer :status, default: 0, null: false
+      t.integer :total, default: 0, null: false
 
       t.timestamps
     end
